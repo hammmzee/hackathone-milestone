@@ -107,6 +107,7 @@ ul {
     }
 
     .resume-container {
-        box-shadow: none; 
+        box-shadow: none;
+        padding-right: 20%;
     }
 }
