@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Editable Resume Builder</h1>
+            <p>Fill out the form below to create your professional resume to start your new journey.</p>
+        </header>
+        <form id="resume's-form" method="POST" class="resume-form">
+            <section>
+                <h2>Personal Information</h2>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" placeholder="Your Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+
+                <label for="linkedin">LinkedIn Profile:</label>
+                <input type="url" id="linkedin" name="linkedin" placeholder="https://linkedin.com/in/yourprofile">
+
+                <label for="portfolio">Portfolio URL:</label>
+                <input type="url" id="portfolio" name="portfolio" placeholder="https://yourportfolio.com">
+            </section>
+
+            <section>
+                <h2>Professional Summary</h2>
+                <label for="summary">Summary:</label>
+                <textarea id="summary" name="summary" rows="4" placeholder="A brief professional summary..."
+                    required></textarea>
+            </section>
+
+            <section>
+                <h2>Work Experience</h2>
+                <div class="experience-group">
+                    <label for="job-title">Job Title:</label>
+                    <input type="text" id="job-title" name="job-title" placeholder="Your Job Title" required>
+
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" placeholder="Company Name" required>
+
+                    <label for="job-dates">Duration:</label>
+                    <input type="text" id="job-dates" name="job-dates" placeholder="e.g., Jan 2020 - Dec 2022" required>
+
+                    <label for="job-description">Job Description:</label>
+                    <textarea id="job-description" name="job-description" rows="4"
+                        placeholder="Describe your responsibilities and achievements..." required></textarea>
+                </div>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <label for="degree">Degree:</label>
+                <input type="text" id="degree" name="degree" placeholder="Your Degree (e.g., BS Data Science)" required>
+
+                <label for="institution">Institution:</label>
+                <input type="text" id="institution" name="institution" placeholder="Institution Name" required>
+
+                <label for="graduation-year">Graduation Year:</label>
+                <input type="text" id="graduation-year" name="graduation-year" placeholder="Year of Graduation"
+                    required>
+            </section>
+
+            <section>
+                <h2>Skills</h2>
+                <label for="skills">List Your Skills:</label>
+                <textarea id="skills" name="skills" rows="3" placeholder="e.g., Python, Machine Learning, Data Analysis"
+                    required></textarea>
+            </section>
+
+            <button type="submit" class="submit-btn">Generate Resume</button>
+        </form>
+    </div>
+
+    <div id="resume-result" contenteditable="true"></div>
+
+    <script src="app.js" defer></script>
+</body>
+
+</html>
