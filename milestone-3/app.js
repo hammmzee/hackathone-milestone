@@ -22,12 +22,6 @@ form.addEventListener("submit", function (event) {
     // Generating the resume's content dynamically
     var resumeHTML = "\n        <h2><b>Resume</b></h2>\n        <h3>Personal Information</h3>\n        <p><b>Full Name:</b> ".concat(name, "</p>\n        <p><b>Email:</b> ").concat(email, "</p>\n        <p><b>Phone:</b> ").concat(phone, "</p>\n        <p><b>LinkedIn Profile:</b> <a href=\"").concat(profile, "\" target=\"_blank\">").concat(profile, "</a></p>\n        <p><b>Portfolio:</b> <a href=\"").concat(portfolio, "\" target=\"_blank\">").concat(portfolio, "</a></p>\n\n        <h3>Professional Summary</h3>\n        <p>").concat(summary, "</p>\n\n        <h3>Work Experience</h3>\n        <p><b>Job Title:</b> ").concat(job, "</p>\n        <p><b>Company Name:</b> ").concat(company, "</p>\n        <p><b>Duration:</b> ").concat(jobDates, "</p>\n        <p><b>Job Description:</b> ").concat(jobDescription, "</p>\n\n        <h3>Education</h3>\n        <p><b>Degree:</b> ").concat(degree, "</p>\n        <p><b>Institution:</b> ").concat(institution, "</p>\n        <p><b>Graduation Year:</b> ").concat(graduationYear, "</p>\n\n        <h3>Skills</h3>\n        <p>").concat(skills, "</p>\n    ");
     // Displaying the generated resume in the result area
-    //     if(resumeDisplayElement){
-    //         resumeDisplayElement.innerHTML = resumeHTML;
-    //     }else {
-    //         console.error("missing.");
-    //     }
-    // });
     if (resumeDisplayElement) {
         resumeDisplayElement.innerHTML = resumeHTML;
         // Scroll smoothly to the result section
