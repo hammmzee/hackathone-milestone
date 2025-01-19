@@ -51,12 +51,6 @@ form.addEventListener("submit", (event: Event) => {
     `;
 
     // Displaying the generated resume in the result area
-//     if(resumeDisplayElement){
-//         resumeDisplayElement.innerHTML = resumeHTML;
-//     }else {
-//         console.error("missing.");
-//     }
-// });
 if (resumeDisplayElement) {
     resumeDisplayElement.innerHTML = resumeHTML;
 
